@@ -22,11 +22,10 @@ This repository is designed to utilize numpy and pandas for data handling as wel
 
 ### Required Packages
 
-matplotlib
 
-pandas
+<code>assignment_3.1.py</code>   pandas
 
-seaborn
+<code>assignment_3.2.py</code>   pandas, matplotlib, seaborn
 
 
 ### Execution
@@ -35,20 +34,22 @@ seaborn
 
 1. Clone repository
 
-2. Change working directory to location of files
+2. Install required dependencies
+
+3. Change working directory to location of files
 
     ```
     cd path/to/files
     ```
 
-3. Run the scripts using the following commands: 
+4. Run the scripts using the following commands: 
 
     ```
     python assignment_3.1.py 
     python assignment_3.2.py
     ```
 
-4. Each script will output results in the command line.
+5. Each script will output results in the command line.
 
     a. Each graph will require you to close the window for the next graph to be displayed.
 

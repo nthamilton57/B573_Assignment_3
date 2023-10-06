@@ -28,7 +28,7 @@ vis_data['Died'] = ~vis_data['Survived'].astype(bool)
 
 
 #Create a histogram showing the distribution of age of people on the Titanic. 
-hist1 = sns.histplot(x = 'Age', data = vis_data)
+hist1 = sns.histplot(x = 'Age', kde = True, data = vis_data)
 
 #create the x and y label and title
 plt.xlabel('Age')
@@ -49,7 +49,7 @@ plt.show()
 
 #Make another histogram showing the distribution of age of people on the Titanic segregated by survivalship.
 #use survived as the hue but dont include null values
-hist2 = sns.histplot(x = 'Age', hue = 'Survived', data = vis_data, multiple='stack')
+hist2 = sns.histplot(x = 'Age', kde = True, hue = 'Survived', data = vis_data, multiple='stack')
 #create legend labels and assign them to the legend
 legend_labels = ['Survived', 'Died']
 hist2.legend(labels=legend_labels)
